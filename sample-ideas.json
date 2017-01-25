@@ -1,0 +1,33 @@
+{ "ideas": [{
+    "idea": "Jet Backpack",
+    "creators": ["Elon Musk", "Bill Gates"],
+    "details": "Eliminate the use of cars.  The future of travel is fully solar powered jet packs",
+    "id": "1",
+    "goal": 30000,
+    "funds": "All funds will be used to build more jetpacks",
+    "rewards": ["coupon for half-priced jetpack"],
+    "type": "product",
+    "favorite": false
+
+    }, {
+    "idea": "Help a starving Artist (me)",
+    "creators": ["June Moon"],
+    "details": "I'm hungry.",
+    "id": "2",
+    "goal": 10000,
+    "funds": "All funds will be used to buy food",
+    "rewards": "I will mail you a haiku",
+    "type": "charity",
+    "favorite": false
+      }, {
+    "idea": "Build a large tower of cans",
+    "creators": ["Jimi Hendrix", "Walter Cronkite"],
+    "details": "We want to replicate the Eiffel Tower with empty soup cans.",
+    "id": "3",
+    "goal": 100000,
+    "funds": "All funds will go to the purchase of super-glue and cans",
+    "rewards": "We will mail you a signed phot of the finished product",
+    "type": "project",
+    "favorite": false
+  }]
+}
