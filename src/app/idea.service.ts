@@ -19,7 +19,7 @@ export class IdeaService {
      this.ideas.push(newIdea);
    }
 
-   getIdeasById(ideaId: String) {
+   getIdeaById(ideaId: String) {
      return this.angularFire.database.object('/ideas/' + ideaId);
    }
 

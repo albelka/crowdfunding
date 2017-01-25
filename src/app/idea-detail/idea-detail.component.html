@@ -1,0 +1,13 @@
+<div class="box">
+  <h3>{{(ideaToDisplay | async)?.title}}</h3>
+  By:
+  <div *ngFor="let creator of (ideaToDisplay | async)?.creators">
+    <h5>{{creator}}</h5>
+  </div>
+  <p>{{(ideaToDisplay | async)?.details}}</p>
+  <p>goal: ${{(ideaToDisplay | async)?.goal}}</p>
+  <p>{{(ideaToDisplay | async)?.funds}}</p>
+  <div *ngFor="let reward of (ideaToDisplay | async)?.rewards">
+    <p>rewards: {{reward}}</p>
+  </div>
+</div>

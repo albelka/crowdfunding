@@ -1,6 +1,6 @@
 <h2>Ideas you may like</h2>
 <hr>
-<div *ngFor="let idea of ideas | async">
+<div *ngFor="let idea of ideas | async" (click)="goToDetailPage(idea)">
   <div class="box">
     <h4>{{idea.title}}</h4>
     <div *ngFor="let creator of idea.creators">
