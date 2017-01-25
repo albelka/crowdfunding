@@ -1,5 +1,5 @@
 { "ideas": [{
-    "idea": "Jet Backpack",
+    "title": "Jet Backpack",
     "creators": ["Elon Musk", "Bill Gates"],
     "details": "Eliminate the use of cars.  The future of travel is fully solar powered jet packs",
     "id": "1",
@@ -10,7 +10,7 @@
     "favorite": false
 
     }, {
-    "idea": "Help a starving Artist (me)",
+    "title": "Help a starving Artist (me)",
     "creators": ["June Moon"],
     "details": "I'm hungry.",
     "id": "2",
@@ -20,7 +20,7 @@
     "type": "charity",
     "favorite": false
       }, {
-    "idea": "Build a large tower of cans",
+    "title": "Build a large tower of cans",
     "creators": ["Jimi Hendrix", "Walter Cronkite"],
     "details": "We want to replicate the Eiffel Tower with empty soup cans.",
     "id": "3",
