@@ -16,7 +16,7 @@
   <div class="form-group">
     <label>Describe your project:</label>
     <br>
-    <textarea #newDescription class="form-control"></textarea>
+    <textarea #newDetails class="form-control"></textarea>
   </div>
   <br>
   <div class="form-group">
@@ -36,7 +36,7 @@
     <br>
     <input #newRewards class="form-control">
   </div>
-  <br> -->
+  <br>
   <div class="form-group">
     <label>This is:</label>
     <select class="form-control">
@@ -46,6 +46,6 @@
     </select>
   </div>
   <br>
-  <button class="btn btn-info" (click)="submitForm(newTitle.value, newCreators.value, newDetails.value, newGoal.value, newFunds.value, newRewards.value, newType.value)">Add</button>
+  <button class="btn btn-info" (click)="submitForm(newTitle.value, newCreators.value.split(), newDetails.value, newGoal.value, newFunds.value, newRewards.value.split(), newType.value)">Add</button>
 
 </div>

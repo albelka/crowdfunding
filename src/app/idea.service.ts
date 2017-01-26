@@ -16,6 +16,8 @@ export class IdeaService {
    }
 
    addIdea(newIdea: Idea) {
+     console.log( "here" + newIdea);
+     console.log("here");
      this.ideas.push(newIdea);
    }
 
