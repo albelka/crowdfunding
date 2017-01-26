@@ -1,6 +1,17 @@
 <h2>Ideas you may like</h2>
+<p>Sort by:</p>
+<div class="selectbox">
+  <select (change)="onChange($event.target.value)">
+      <option value="allIdeas"  selected="selected">All Ideas</option>
+      <option value="charity">Charities</option>
+      <option value="project">Projects</option>
+      <option value="product">Products</option>
+    </select>
+</div>
+
+
 <hr>
-<div *ngFor="let idea of ideas | async" (click)="goToDetailPage(idea)">
+<div (click)="goToDetailPage(idea)" *ngFor="let idea of ideas | async | typeOf:filterByType" >
   <div class="box">
     <h4>{{idea.title}}</h4>
     <div *ngFor="let creator of idea.creators">

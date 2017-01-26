@@ -12,6 +12,7 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2'
 })
 export class IdeasComponent implements OnInit {
   ideas: FirebaseListObservable<any[]>;
+  filterByType: string = "allIdeas";
 
   constructor(private router: Router, private ideaService: IdeaService) { }
 
@@ -21,6 +22,10 @@ export class IdeasComponent implements OnInit {
 
   goToDetailPage(clickedIdea) {
     this.router.navigate(['ideas', clickedIdea.$key])
+  }
+
+  onChange(optionFromMenu) {
+    this.filterByType = optionFromMenu;
   }
 
 }

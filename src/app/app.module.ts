@@ -11,6 +11,7 @@ import { AngularFireModule } from 'angularfire2';
 import { IdeaDetailComponent } from './idea-detail/idea-detail.component';
 import { AdminComponent } from './admin/admin.component';
 import { NewIdeaComponent } from './new-idea/new-idea.component';
+import { TypePipe } from './type.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -25,7 +26,9 @@ export const firebaseConfig = {
     IdeasComponent,
     IdeaDetailComponent,
     AdminComponent,
-    NewIdeaComponent
+    NewIdeaComponent,
+    AdminComponent,
+    TypePipe
   ],
   imports: [
     BrowserModule,
