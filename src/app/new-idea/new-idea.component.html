@@ -1,0 +1,51 @@
+<h3>Idea:</h3>
+
+<div class="new-idea container">
+  <div class="form-group">
+    <label>Title:</label>
+    <br>
+    <input #newTitle class="form-control">
+  </div>
+  <br>
+  <div class="form-group">
+    <label>Your Name:</label>
+    <br>
+    <input #newCreators class="form-control">
+  </div>
+  <br>
+  <div class="form-group">
+    <label>Describe your project:</label>
+    <br>
+    <textarea #newDescription class="form-control"></textarea>
+  </div>
+  <br>
+  <div class="form-group">
+    <label>Goal:</label>
+    <br>
+    <input type="number" #newGoal class="form-control">
+  </div>
+  <br>
+  <div class="form-group">
+    <label>What will you do with the funds raised?</label>
+    <br>
+    <textarea #newFunds class="form-control"></textarea>
+  </div>
+  <br>
+  <div class="form-group">
+    <label>What reward can you offer?</label>
+    <br>
+    <input #newRewards class="form-control">
+  </div>
+  <br> -->
+  <div class="form-group">
+    <label>This is:</label>
+    <select class="form-control">
+      <option #newType value="project">A project</option>
+      <option #newType value="charity">A charity</option>
+      <option #newType value="product" selected="selected">A product</option>
+    </select>
+  </div>
+  <br>
+  <button class="btn btn-info" (click)="submitForm(newTitle.value, newCreators.value, newDetails.value, newGoal.value, newFunds.value, newRewards.value, newType.value)">Add</button>
+
+</div>
